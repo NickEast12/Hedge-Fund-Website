@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .1s ease-in-out;
     
 }
 
@@ -27,8 +28,6 @@ li {
         margin-top: 5em;
     }
     .header-wrapper nav {
-        position: fixed;
-        background: white;
         width: 100%;
         top: 0px;
         z-index: 200;
@@ -166,6 +165,7 @@ li {
             "two three"
             "four five";
     }
+    
     .company-wrapper {
         width: 80%;
         margin: .6em auto;
@@ -465,6 +465,9 @@ li {
         margin-top: .6em;
         font-family: Raleway;
     }
+    #hr-no-show {
+        display: none;
+    }s
     /* ---------------- Contact Page -------------------
     -----------------------------------------------*/
     .contact-wrapper {
@@ -935,7 +938,196 @@ li {
 }
 }
 @media only screen and (min-width:1024px) {
+    /* index .html  */
     body {
         font-size: 1.45em;
+    
+    }
+
+    .header-wrapper {
+       position: relative;
+    }
+    .header-wrapper nav {
+        border: none;
+        position: absolute;
+        width: 100%;
+    }
+    #mobileOverlay {
+        display: none;
+    }
+    .owl-carousel {
+        margin-top: -5em;
+        height: 900px;
+    }
+    .title-page-content {
+        height: 800px;
+    }
+    .title-page-content img {
+        height: 100%;
+        width: 100%;
+    }
+    .header-wrapper nav ul {
+        display: grid;
+        grid-template-columns: 430px  1fr 1fr 1fr  1fr;
+        text-align: left;
+    }
+    #navigation-button {
+        display: none;
+    }
+    .header-wrapper nav ul li {
+        font-family: 'Raleway', serif;
+        color: white;
+        text-shadow: 1px 1px black;
+        cursor: pointer;
+    }
+    #mobileMenu {
+        display: none;
+    }
+    .no-show-mobile {
+        display: block;
+        margin-top: 40%;
+    }
+    .header-logo  {
+        width: 400px;
+    }
+    .main-content-wrapper h3 {
+        text-align: center;
+    }
+    .company-pictures {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px;
+        grid-gap: 3%;
+        margin: auto;
+        width: 90%;
+        grid-template-areas: 
+        "one one two three" 
+        "one one four five"   
+    }
+    .boxA {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .boxA > img {
+        height: 100%;
+    }
+    .boxA div img {
+        width: 290px;
+        height: 100px;
+        margin: 35% 0 0 18%;
+    }
+    .smaller-box {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .smaller-box  img {
+        width: 100%;
+        height: 100%;
+
+    }
+    .smaller-box div img {
+        margin: 35% 11% 0 11%;
+        width: 170px;
+        height: 50px;
+    }
+    #logo-correction {
+        width: 100px;
+        margin: 30% 28%;
+    }
+    #logo-correction1 {
+        width: 100px;
+        margin: 35% 28%;
+    }
+    .investment-approach-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3%;
+    }
+    .investment-approach-content div {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+    
+    }
+    .investment-approach-content div img {
+       width: 70px;
+       height: 70px;
+       margin-top: .4em;
+    }
+    .news-content {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .legal-wrapper {
+        font-size: .7em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .legal-wrapper > p {
+        text-align: left;
+        
+    }
+    .legal-wrapper p:last-child {
+        text-align: right;
+        padding-left: 10em;
+        width: 100%;
+    }
+    /* About page */
+    .about-page-header {
+        margin-top: -5em;
+        height: 100%;
+    }
+    .about-page-header img {
+        height: 800px;
+    }
+    .about-page-information {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+    }
+    .why-ocean-capital h3 {
+        margin: 1.5em 0;
+    }
+    #about-us-mobile-owl {
+        display: none;
+    }
+    .why-us {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Our Vision */
+    .our-vision-section-one{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3%;
+    }
+    .display-none {
+        display: none;
+    }
+    .our-vision-inner h1 {
+        font-size: 1.5em;
+    }
+    .our-vision-inner p {
+        font-size: 1.1em;
+    }
+    #hr-no-show {
+        display: block;
+    }
+    .testimonials-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3%;
+    }
+    #positioning-fix {
+        padding-top: 3.25em;
+    }
+    .testimonials-inner img {
+        width: 250px;
+    }
+    .office-locations {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    .contact-wrapper{
+        margin-bottom: 7em;
     }
 }
